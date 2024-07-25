@@ -59,7 +59,7 @@ double myTrapezoid(double* data, double lowBound, double highBound, int64_t n){
 }
 
 // Adapted From: https://rosettacode.org/wiki/Numerical_integration#C
-double rossetaSimpson(double* data, double from, double to, int64_t n) {
+double rosettaSimpson(double* data, double from, double to, int64_t n) {
    double h = (to - from) / n;
    double sum1 = 0.0;
    double sum2 = 0.0;
@@ -76,15 +76,3 @@ double rossetaSimpson(double* data, double from, double to, int64_t n) {
 
 }
 
-double myLRiemann(double* data, double lowBound, double highBound, int64_t n){
-
-    double h = (highBound - lowBound) / n; 
-    double integral = 0; 
-
-    for(int i = 0; i < n; i++){
-        integral += data[i]; 
-    }
-
-    integral *= h; 
-    return integral; 
-}

@@ -6,7 +6,7 @@
 //                                                             /
 //*************************************************************/
 
-//g++ -Wall -Wpedantic -std=c++17 -Wextra -march=haswell -o execpp functionsplus.cpp -O3
+//g++ -Wall -Wpedantic -std=c++17 -Wextra -march=haswell -o execpp functionsplus.cpp main.cpp -O3
 
 // Enable clock_gettime: https://stackoverflow.com/a/40515669
 #define _POSIX_C_SOURCE 199309L
